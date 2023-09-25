@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Shortcut icon" href="img/icon.png"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <title>knappz_web</title>
+</head>
+<body>
+<header>
+
+<!-- NAWIGACJA -->
+    <div class="navbar">
+
+        <div class="logo">
+            <a href="#">knappz</a>
+        </div>
+        
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#socials">Socials</a></li>
+        </ul>
+
+        <a href="#" class="action_btn">Start</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+<!-- MENU RESPONSYWNE -->
+    <div class="dropdown_menu">
+        <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#socials">Sociale</a></li>
+
+            <li><a href="#" class="action_btn">Start</a></li>
+    </div>
+</header>
+
+<!-- MAIN KONTENT -->
+<main>
+    <section id="home">Home</section>
+    <section id="projects">Projects</section>
+    <section id="contact">Contact</section>
+    <section id="socials">Socials</section>
+</main>
+
+<!-- SKRYPTY -->
+<!-- 1# MENU SKRYPT -->
+<script>
+    const toggle_btn = document.querySelector('.toggle_btn')
+    const toggle_btnIcon = document.querySelector('.toggle_btn i')
+    const dropdown_menu = document.querySelector('.dropdown_menu')
+
+    toggle_btn.onclick = function () {
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+
+        toggle_btnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+</body>
+</html>
