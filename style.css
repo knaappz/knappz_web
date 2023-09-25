@@ -38,16 +38,22 @@ a:hover {
 header {
     padding: 0 2rem;
     position: sticky;
-    top: 20px;
+    top: 0;
+    
+    backdrop-filter: blur(35px);
+    
 }
 
 
 
 .navbar {
-    width: 100%;
+    width: 80%;
     height: 60px;
     max-width: 1200px;
-    margin: 20px auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,12 +67,17 @@ header {
 
 .navbar .links {
     display: flex;
+    justify-content: center;
+    width: 70%;
     gap: 2rem;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 0.5rem 3rem;
-    backdrop-filter: blur(15px);
     text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.navbar .links li:hover {
+    scale: 0.95;
 }
 
 .navbar .toggle_btn {
@@ -142,34 +153,108 @@ main {
     align-items: center;
 }
 
-#projects, #contact, #socials {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    color: #fff;
-    justify-content: center;
-    margin: 20px auto;
-    border-radius: 20px;
-    
-    padding-top: 80px;
-}
-
 #home {
     height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    width: 80%;
+    border-radius: 20px;
+    margin: 20px auto;
     color: #fff;
-    justify-content: center;
-
+    
 }
 
 #home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+.profile, .omnie {
+    width: 60%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(53, 53, 69, 0.411);
+    margin-bottom: 20px;
+    
+}
+
+.profile {
+    float: left;
+}
+
+.profile img{
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid rgb(28, 28, 54);
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.profile img:hover{
+    scale: 0.95;
+    border: 7px solid orange;
+}
+
+.profile img:active {
+    scale: 1.05;
+}
+
+
+.profile p{
+    font-size: 18px;
+}
+
+.omnie {
+    float: right;
+}
+
+.omnie p{
+    font-size: 18px;
+    padding: 10px;
+}
+
+#projects, #contact {
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding-top: 80px;
+    
+}
+
+#socials {
+    height: 100vh;
+    width: 90%;
+    color: #fff;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    width: 100%;
+    height: 100vh;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.244);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Responsive */
 @media (max-width: 992px) {
