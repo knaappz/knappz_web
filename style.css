@@ -39,12 +39,128 @@ header {
     padding: 0 2rem;
     position: sticky;
     top: 0;
-    
+    background: linear-gradient(
+        to bottom,
+        rgba(23, 23, 31, 0.555),
+        #00000000
+    );
     backdrop-filter: blur(35px);
+}
+
+.sky {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
     
 }
 
+.stars {
+    width: 3px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #fff;
+    
+    box-shadow: 0px 0px 8px #fff;
+}
 
+.stars:nth-child(1) {
+    left: 5%;
+    top: 30%;
+    position: absolute;
+}
+
+.stars:nth-child(2) {
+    left: 50%;
+    top: 80%;
+    position: absolute;
+    
+}
+
+.stars:nth-child(3) {
+    width: 6px;
+    height: 6px;
+    box-shadow: 0px 0px 6px #fff;
+    left: 88%;
+    top: 23%;
+    position: absolute;
+    background-color: orange;
+}
+
+.stars:nth-child(4) {
+    width: 5px;
+    height: 5px;
+    left: 12%;
+    top: 40%;
+    position: absolute;
+}
+
+.stars:nth-child(5) {
+    left: 44%;
+    top: 34%;
+    position: absolute;
+    background-color: orange;
+}
+
+.stars:nth-child(6) {
+    left: 23%;
+    top: 10%;
+    position: absolute;
+}
+
+.stars:nth-child(7) {
+    left: 75%;
+    top: 68%;
+    position: absolute;
+    
+}
+
+.stars:nth-child(8) {
+    left: 3%;
+    top: 88%;
+    position: absolute;
+}
+
+.stars:nth-child(9) {
+    left: 33%;
+    top: 33%;
+    position: absolute;
+    background-color: orange;
+}
+
+.stars:nth-child(10) {
+    
+    left: 90%;
+    top: 70%;
+    position: absolute;
+}
+
+.stars:nth-child(11) {
+    width: 6px;
+    height: 6px;
+    left: 60%;
+    top: 70%;
+    position: absolute;
+    background-color: orange;
+
+}
+
+.stars:nth-child(12) {
+    left: 80%;
+    top: 40%;
+    position: absolute;
+}
+
+.stars:nth-child(13) {
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 15px #fff;
+    left: 95%;
+    top: 60%;
+    position: absolute;
+}
 
 .navbar {
     width: 80%;
@@ -117,8 +233,8 @@ header {
     top: 60px;
     width: 200px;
     height: 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background-color: rgba(53, 53, 69, 0.202);
+    backdrop-filter: blur(30px);
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -128,6 +244,7 @@ header {
 
 .dropdown_menu.open {
     height: 240px;
+    
 }
 
 .dropdown_menu li {
@@ -156,10 +273,13 @@ main {
 #home {
     height: 100vh;
     width: 80%;
+    min-width: 300px;
     border-radius: 20px;
     margin: 20px auto;
     color: #fff;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 #home h1 {
@@ -167,22 +287,19 @@ main {
     margin-bottom: 1rem;
 }
 
-.profile, .omnie {
-    width: 60%;
-    height: 250px;
-    padding: 10px;
+.profile {
+    width: 80%;
     border-radius: 40px;
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    background-color: rgba(53, 53, 69, 0.411);
-    margin-bottom: 20px;
-    
+    margin: 220px 0 20px 0;
+    padding: 20px;
 }
 
-.profile {
-    float: left;
-}
+
 
 .profile img{
     width: 200px;
@@ -191,6 +308,7 @@ main {
     cursor: pointer;
     margin-right: 10px;
     transition: 0.2s;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.405);
 }
 
 .profile img:hover{
@@ -202,18 +320,13 @@ main {
     scale: 1.05;
 }
 
-
-.profile p{
-    font-size: 18px;
-}
-
-.omnie {
-    float: right;
-}
-
-.omnie p{
-    font-size: 18px;
-    padding: 10px;
+.profile p {
+    font-size: 16px;
+    padding: 15px;
+    letter-spacing: 0.8px;
+    background-color: rgba(53, 53, 69, 0.298);
+    border-radius: 20px;
+    margin-top: 5px;
 }
 
 #projects, #contact {
@@ -242,13 +355,26 @@ main {
 .icons {
     width: 100%;
     height: 100vh;
+    margin: 240px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons img {
+    max-width: 150px;
+    border-radius: 50%;
+    padding: 20px;
+    
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
 }
 
 .footer {
     width: 100%;
     height: 50px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.244);
     color: white;
     display: flex;
     justify-content: center;
