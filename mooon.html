@@ -1,6 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.block1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.block2 {
+  background-color: red; /* Ten sam kolor tła co block1 */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.block2::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: transparent;
+  z-index: 3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="block1"></div>
+  <div class="block2"></div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
   <title>Faza Księżyca</title>
 </head>
 <body>
@@ -41,4 +98,4 @@
     moonImageElement.alt = `Faza Księżyca: ${currentMoonPhase}`;
   </script>
 </body>
-</html>
+</html> -->

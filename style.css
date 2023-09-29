@@ -13,7 +13,7 @@ html {
 body {
     height: 100%;
     background-color: #000;
-    background-image: url('img/landscape2.png');
+    background-image: url('img/landscape3.png');
     background-size: cover;
     background-position: center;
 
@@ -22,6 +22,59 @@ body {
       -webkit-user-select: none; /* Dla przeglądarek opartych na silniku WebKit (Chrome, Safari) */
       -ms-user-select: none;
 }
+
+.moon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d3d2d2;
+    box-shadow: -10px 0px 20px 2px  #ffffff5b;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.moon:hover {
+    box-shadow: -2px 0px 10px 0px #ffffff5b;
+}
+
+.dot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #173753;
+    background-blend-mode:saturation;
+    top: -10%;
+    left: 30%;
+}
+
+/* .fallingstar {
+    width: 3px;
+    height: 7px;
+    background: yellow;
+    box-shadow: 0px 0px 9px 2px yellow;
+    border-radius: 90px;
+    position: absolute;
+    opacity: 0.5;
+    top: -200px;
+    left: 20%;
+}
+
+@keyframes fall {
+    from {
+        transform: translateX(0);
+        
+        opacity: 1;
+    }
+    to {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+} */
+
 
 /* Header */
 
@@ -37,6 +90,7 @@ a {
 }
 
 header {
+    z-index: 2;
     padding: 0 2rem;
     position: sticky;
     top: 0;
@@ -46,6 +100,7 @@ header {
         #00000000
     );
     backdrop-filter: blur(35px);
+    
 }
 
 .sky {
@@ -217,26 +272,37 @@ header {
     width: 200px;
     height: 0;
     background-color: rgba(53, 53, 69, 0.202);
-    backdrop-filter: blur(30px);
     border-radius: 10px;
     overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-transform: uppercase;
-
+    
+    
+    
 }
 
+/* Dodaj kolor czcionki dla hover wewnątrz dropdown menu */
 .dropdown_menu.open {
     height: 180px;
+    
 }
+
 
 .dropdown_menu li {
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
 }
 
+.dropdown_menu li a {
+    transition: 0.4s;
+}
 
+.dropdown_menu li a:hover {
+    color: orange;
+}
 
 /* Home */
 
@@ -279,23 +345,26 @@ main {
 
 
 .profile img{
+    z-index: 1;
+    position: static;
     width: 200px;
     border-radius: 50%;
     border: 2px solid rgb(28, 28, 54);
     cursor: pointer;
     margin-right: 10px;
-    transition: 0.2s;
+    transition: 0.5s;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.405);
 }
 
-/* .profile img:hover{
+.profile img:hover{
     scale: 0.95;
-    border: 7px solid orange;
+    rotate: -2deg;
+    border: 2px solid orange;
 }
 
 .profile img:active {
     scale: 1.05;
-} */
+}
 
 .profile p {
     font-size: 16px;
