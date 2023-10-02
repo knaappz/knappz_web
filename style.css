@@ -24,57 +24,24 @@ body {
 }
 
 .moon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #d3d2d2;
-    box-shadow: -10px 0px 20px 2px  #ffffff5b;
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 10%;
     left: 65%;
     overflow: hidden;
-    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.moon:hover {
-    box-shadow: -2px 0px 10px 0px #ffffff5b;
-}
-
-.dot {
+#moonImage {
     width: 100px;
-    height: 100px;
     border-radius: 50%;
-    position: relative;
-    background-color: #173753;
-    background-blend-mode:saturation;
-    top: -10%;
-    left: 30%;
+    transition: 0.5s;
+    
 }
-
-/* .fallingstar {
-    width: 3px;
-    height: 7px;
-    background: yellow;
-    box-shadow: 0px 0px 9px 2px yellow;
-    border-radius: 90px;
-    position: absolute;
-    opacity: 0.5;
-    top: -200px;
-    left: 20%;
-}
-
-@keyframes fall {
-    from {
-        transform: translateX(0);
-        
-        opacity: 1;
-    }
-    to {
-        transform: translateY(500px);
-        opacity: 0;
-    }
-} */
-
 
 /* Header */
 
@@ -271,7 +238,7 @@ header {
     top: 60px;
     width: 200px;
     height: 0;
-    background-color: rgba(53, 53, 69, 0.202);
+    background-color: rgba(53, 53, 69, 0.607);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -341,7 +308,6 @@ main {
     margin: 150px 0 20px 0;
     padding: 20px;
 }
-
 
 
 .profile img{

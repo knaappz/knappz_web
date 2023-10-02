@@ -16,15 +16,21 @@
     <title>knappz_web</title>
 </head>
 <body>
-<div class="moon">
+    <div class="moon">
+        <img id="moonImage" src="img/now.png">
+    </div>
+    
+
+<!-- <div class="moon">
+
     <div class="dot"></div> 
-</div>
+</div> -->
 
 <header>
 
-    <div class="superstar">
-        <div class="fallingstar"></div>
-    </div>
+<div class="superstar">
+    <div class="fallingstar"></div>
+</div>
 
 <!-- NAWIGACJA -->
     <div class="navbar">
@@ -131,5 +137,41 @@
     }
 </script>
 
+<!-- ANIMOWANY KSIEZYC -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script>
+    // Tablica z nazwami obrazków
+    const imageNames = [
+        'now.png',
+        'sierp2.png',
+        'p_kwadra.png',
+        'r_garb2.png',
+        'pelnia.png',
+        'r_garb.png',
+        'p_kwadra2.png',
+        'sierp.png',
+        'now.png'
+    ];
+
+    // Pobierz element obrazu
+    const moonImage = document.getElementById('moonImage');
+
+    // Indeks aktualnie wyświetlanego obrazu
+    let currentIndex = 0;
+
+    // Funkcja do zmiany obrazu co pół godziny
+    function changeImage() {
+        // Zaktualizuj źródło obrazu
+        moonImage.src = `img/${imageNames[currentIndex]}`;
+        
+        // Przejdź do następnego obrazu lub wróć na początek
+        currentIndex = (currentIndex + 1) % imageNames.length;
+    }
+
+    // Uruchom funkcję zmiany obrazu co pół godziny (1800 000 ms)
+    setInterval(changeImage, 30000);
+</script>
 </body>
 </html>
