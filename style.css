@@ -23,26 +23,6 @@ body {
       -ms-user-select: none;
 }
 
-.moon {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 10%;
-    left: 65%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#moonImage {
-    width: 100px;
-    border-radius: 50%;
-    transition: 0.5s;
-    
-}
-
 /* Header */
 
 li {
@@ -282,13 +262,14 @@ main {
 
 #home {
     height: 100vh;
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
     margin: 20px auto;
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     
 }
 
@@ -297,48 +278,81 @@ main {
     margin-bottom: 1rem;
 }
 
-.profile {
-    width: 80%;
-    border-radius: 40px;
+/* LEWY KONTENER */
+
+.left-cont {
+    width: 70%;
+    height: 100vh;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-    margin: 150px 0 20px 0;
-    padding: 20px;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
-
-.profile img{
+.left-cont img {
     z-index: 1;
     position: static;
     width: 200px;
     border-radius: 50%;
     border: 2px solid rgb(28, 28, 54);
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 20px;
     transition: 0.5s;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.405);
 }
 
-.profile img:hover{
+.left-cont a {
+    
+}
+
+.left-cont img:hover{
     scale: 0.95;
     rotate: -2deg;
     border: 2px solid orange;
 }
 
-.profile img:active {
+.left-cont img:active {
     scale: 1.05;
 }
 
-.profile p {
+.omnie {
+    
     font-size: 16px;
     padding: 15px;
     letter-spacing: 0.8px;
     background-color: rgba(53, 53, 69, 0.298);
     border-radius: 20px;
     margin-top: 5px;
+}
+
+
+/* PRAWY KONTENER */
+
+.right-cont {
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.moon {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#moonImage {
+    width: 100px;
+    border-radius: 50%;
+    transition: 0.5s;
+    
 }
 
 #projects, #contact {
@@ -348,9 +362,13 @@ main {
     color: #fff;
     justify-content: center;
     margin: 20px auto;
-    border-radius: 20px;
+    
     padding-top: 80px;
     
+}
+
+#projects {
+    background-color: #0000008e;
 }
 
 #socials {
@@ -361,27 +379,16 @@ main {
     border-radius: 20px;
     padding-top: 60px;
     display: flex;
-    flex-direction: column;
-}
-
-.icons {
-    width: 100%;
-    height: 100vh;
-    margin: 240px 0 0 0;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
 }
 
-.icons img {
+.blok img {
     width: 130px;
     border-radius: 50%;
     padding: 10px;
-}
-
-.icons p {
-    font-size: 18px;
 }
 
 .blok {
@@ -393,7 +400,10 @@ main {
     align-items: center;
     transition: 0.4s;
     margin: 10px;
-    
+}
+
+.blok p {
+    font-size: 18px;
 }
 
 .ig:hover {
@@ -407,7 +417,7 @@ main {
 }
 
 .gh:hover {
-    color: #555555;
+    color: #6f6e6e;
     
 
 }
@@ -459,5 +469,9 @@ main {
     .blok:hover {
         scale: 1.0;
         transform: translateY(0);
+    }
+    .profile p {
+    font-size: 14px;
+        
     }
 }

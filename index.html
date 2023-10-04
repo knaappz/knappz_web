@@ -16,9 +16,6 @@
     <title>knappz_web</title>
 </head>
 <body>
-    <div class="moon">
-        <img id="moonImage" src="img/now.png">
-    </div>
     
 
 <!-- <div class="moon">
@@ -77,14 +74,30 @@
 <!-- MAIN KONTENT -->
 <main>
     <section id="home">
-        <div class="profile">
-        <a href="#socials" title="Tak to ja xD"><img src="img/profilowe.jpg"></a>
+        <div class="left-cont">
+            <a href="#socials" title="Tak to ja xD">
+                <img src="img/profilowe.jpg">
+            </a>
+            
+            <p class="omnie"> Witaj, nazywam się Jakub '<b>knappz</b>' Knapik.<br>
+                Studiuje informatyke na Uniwersytecie Dolnośląskim DSW we Wrocławiu.<br>
+                Hobbystycznie tworze stronki internetowe. <br>
+                Ta na której się właśnie znajdujesz poświecona jest mojemu portfolio.</p>
+            
+    
+            <!-- <p class="omnie">
+                Lubie grać w gry.
+            </p>
+             -->
         
-        <p> Witaj, nazywam się Jakub '<b>knappz</b>' Knapik.<br>
-            Studiuje informatyke na Uniwersytecie Dolnośląskim DSW we Wrocławiu.<br>
-            Hobbystycznie tworze stronki internetowe. <br>
-            Ta na której się właśnie znajdujesz poświecona jest mojemu portfolio.</p>
         </div>
+
+        <div class="right-cont">
+            <div class="moon">
+                <img id="moonImage" src="img/now.png">
+            </div>
+        </div>
+        
     </section>
 
     <section id="projects">
@@ -96,7 +109,6 @@
     </section>  
 
     <section id="socials">
-        <div class="icons">
             <a class="blok ig" href="https://www.instagram.com/jakubenz311/" target="_blank">
                 <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Instagram-512.png">
                 <p>jakubenz311</p>
@@ -111,12 +123,11 @@
                 <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png">
                 <p>knappz</p>
             </a>
-        </div>
-
-        <div id="footer">
-            <p>© knappz_web. Wszystkie prawa zastrzeżone</p>
-        </div>
     </section>
+
+    <div id="footer">
+        <p>© knappz_web. Wszystkie prawa zastrzeżone</p>
+    </div>
 
 </main>
 
@@ -144,7 +155,6 @@
 <script>
     // Tablica z nazwami obrazków
     const imageNames = [
-        'now.png',
         'sierp2.png',
         'p_kwadra.png',
         'r_garb2.png',
@@ -171,7 +181,7 @@
     }
 
     // Uruchom funkcję zmiany obrazu co pół godziny (1800 000 ms)
-    setInterval(changeImage, 30000);
+    setInterval(changeImage, 9000);
 </script>
 </body>
 </html>
