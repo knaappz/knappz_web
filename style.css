@@ -12,8 +12,8 @@ html {
 
 body {
     height: 100%;
-    background-color: #000;
-    background-image: url('img/landscape3.png');
+    background-color: #0a1828;
+    background-image: url('img/landscape2.png');
     background-size: cover;
     background-position: center;
 
@@ -23,8 +23,6 @@ body {
       -ms-user-select: none;
 }
 
-/* Header */
-
 li {
     list-style: none;
 }
@@ -33,135 +31,15 @@ a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
-
 }
+
+/* Header */
 
 header {
     z-index: 2;
     padding: 0 2rem;
     position: sticky;
     top: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(23, 23, 31, 0.555),
-        #00000000
-    );
-    backdrop-filter: blur(35px);
-    
-}
-
-.sky {
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    
-}
-
-.stars {
-    width: 3px;
-    height: 3px;
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 8px #fff;
-}
-
-.stars:nth-child(1) {
-    left: 5%;
-    top: 30%;
-    position: absolute;
-}
-
-.stars:nth-child(2) {
-    left: 50%;
-    top: 80%;
-    position: absolute;
-    
-}
-
-.stars:nth-child(3) {
-    width: 6px;
-    height: 6px;
-    box-shadow: 0px 0px 6px #fff;
-    left: 88%;
-    top: 23%;
-    position: absolute;
-    background-color: orange;
-}
-
-.stars:nth-child(4) {
-    width: 5px;
-    height: 5px;
-    left: 12%;
-    top: 40%;
-    position: absolute;
-}
-
-.stars:nth-child(5) {
-    left: 44%;
-    top: 34%;
-    position: absolute;
-    background-color: orange;
-}
-
-.stars:nth-child(6) {
-    left: 23%;
-    top: 10%;
-    position: absolute;
-}
-
-.stars:nth-child(7) {
-    left: 75%;
-    top: 68%;
-    position: absolute;
-    
-}
-
-.stars:nth-child(8) {
-    left: 3%;
-    top: 88%;
-    position: absolute;
-}
-
-.stars:nth-child(9) {
-    left: 33%;
-    top: 33%;
-    position: absolute;
-    background-color: orange;
-}
-
-.stars:nth-child(10) {
-    
-    left: 90%;
-    top: 70%;
-    position: absolute;
-}
-
-.stars:nth-child(11) {
-    width: 6px;
-    height: 6px;
-    left: 60%;
-    top: 70%;
-    position: absolute;
-    background-color: orange;
-
-}
-
-.stars:nth-child(12) {
-    left: 80%;
-    top: 40%;
-    position: absolute;
-}
-
-.stars:nth-child(13) {
-    width: 8px;
-    height: 8px;
-    box-shadow: 0 0 15px #fff;
-    left: 95%;
-    top: 60%;
-    position: absolute;
 }
 
 .navbar {
@@ -209,7 +87,6 @@ header {
     display: none;
 }
 
-
 /* Dropdown menu */
 .dropdown_menu {
     display: none;
@@ -223,17 +100,11 @@ header {
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-transform: uppercase;
-    
-    
-    
 }
 
-/* Dodaj kolor czcionki dla hover wewnątrz dropdown menu */
 .dropdown_menu.open {
     height: 180px;
-    
 }
-
 
 .dropdown_menu li {
     padding: 0.7rem;
@@ -251,7 +122,7 @@ header {
     color: orange;
 }
 
-/* Home */
+/* Home/Main */
 
 main {
     padding: 0 2rem;
@@ -262,15 +133,14 @@ main {
 
 #home {
     height: 100vh;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
-    margin: 20px auto;
+    margin: 0px auto;
     color: #fff;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-    
+    align-content: center;   
 }
 
 #home h1 {
@@ -278,97 +148,106 @@ main {
     margin-bottom: 1rem;
 }
 
-/* LEWY KONTENER */
+/* KONTENER */
 
-.left-cont {
-    width: 70%;
-    height: 100vh;
-    padding: 20px;
+.container {
+    min-width: 50%;
+    width: 100%;
+    border-radius: 20px; 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: row;
-    align-content: flex-start;
     flex-wrap: wrap;
 }
 
-.left-cont img {
-    z-index: 1;
-    position: static;
-    width: 200px;
-    border-radius: 50%;
-    border: 2px solid rgb(28, 28, 54);
-    cursor: pointer;
-    margin-right: 20px;
-    transition: 0.5s;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.405);
+.container img {
+    margin: 10px;
 }
 
-.left-cont a {
-    
-}
-
-.left-cont img:hover{
-    scale: 0.95;
-    rotate: -2deg;
-    border: 2px solid orange;
-}
-
-.left-cont img:active {
-    scale: 1.05;
-}
-
-.omnie {
-    
-    font-size: 16px;
-    padding: 15px;
-    letter-spacing: 0.8px;
-    background-color: rgba(53, 53, 69, 0.298);
-    border-radius: 20px;
-    margin-top: 5px;
-}
-
-
-/* PRAWY KONTENER */
-
-.right-cont {
-    width: 30%;
-    height: 100vh;
+.opis {
+    width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.moon {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+    animation: fadeInUp 4s ease-in-out 0.9s forwards;
+  }
+  
+  .opis {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+  }
+  
+  .opis p {
+    opacity: 0;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.161) ;
+    border-radius: 20px;
+    animation: fadeInText1 1s ease-in-out forwards;
+  }
 
+  .opis p {
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
+  }
+  
+  .opis p:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .opis p:nth-child(2) {
+    animation-delay: 1.5s;
+  }
+ 
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(150px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-50px);
+      
+    }
+  }
+  
+
+/* KARTA */
+
+.card {
+    margin: 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+  
+.card img {
+    width: 300px;
 }
 
-#moonImage {
-    width: 100px;
-    border-radius: 50%;
-    transition: 0.5s;
-    
-}
 
 #projects, #contact {
     height: 100vh;
-    width: 90%;
+    width: 80%;
     display: flex;
     color: #fff;
     justify-content: center;
     margin: 20px auto;
-    
     padding-top: 80px;
     
 }
 
 #projects {
     background-color: #0000008e;
+}
+
+#contact {
+    background-color: #7289da;
 }
 
 #socials {
@@ -474,4 +353,13 @@ main {
     font-size: 14px;
         
     }
+    #home {
+        width: unset;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+    }
+
 }

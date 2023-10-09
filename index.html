@@ -16,18 +16,8 @@
     <title>knappz_web</title>
 </head>
 <body>
-    
-
-<!-- <div class="moon">
-
-    <div class="dot"></div> 
-</div> -->
 
 <header>
-
-<div class="superstar">
-    <div class="fallingstar"></div>
-</div>
 
 <!-- NAWIGACJA -->
     <div class="navbar">
@@ -46,21 +36,7 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
-    <div class="sky">
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-        <div class="stars"></div>
-    </div>
+    
 
 <!-- MENU RESPONSYWNE -->
     <div class="dropdown_menu">
@@ -74,30 +50,30 @@
 <!-- MAIN KONTENT -->
 <main>
     <section id="home">
-        <div class="left-cont">
-            <a href="#socials" title="Tak to ja xD">
-                <img src="img/profilowe.jpg">
-            </a>
-            
-            <p class="omnie"> Witaj, nazywam się Jakub '<b>knappz</b>' Knapik.<br>
-                Studiuje informatyke na Uniwersytecie Dolnośląskim DSW we Wrocławiu.<br>
-                Hobbystycznie tworze stronki internetowe. <br>
-                Ta na której się właśnie znajdujesz poświecona jest mojemu portfolio.</p>
-            
-    
-            <!-- <p class="omnie">
-                Lubie grać w gry.
-            </p>
-             -->
-        
+
+        <div class="container">
+
+            <div class="card">
+                <img src="img/planet2.png">
+            </div>                  
+
+            <div class="opis">
+                <p> There are many variations of passages of Lorem Ipsum available, <br>
+                    but the majority have suffered alteration in some form, by injected humour, <br>
+                    or randomised words which don't look even slightly believable. <br>
+                </p>
+                
+                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure <br>
+                    there isn't anything embarrassing hidden in the middle of text. <br>
+                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, <br>
+                </p>
+                
+                    
+                
+            </div>
+
         </div>
 
-        <div class="right-cont">
-            <div class="moon">
-                <img id="moonImage" src="img/now.png">
-            </div>
-        </div>
-        
     </section>
 
     <section id="projects">
@@ -130,6 +106,7 @@
     </div>
 
 </main>
+
 
 <!-- SKRYPTY -->
 <!-- 1# MENU SKRYPT -->
@@ -183,5 +160,6 @@
     // Uruchom funkcję zmiany obrazu co pół godziny (1800 000 ms)
     setInterval(changeImage, 9000);
 </script>
+
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .text {
+            opacity: 0;
+            transform: translateY(500px);
+            transition: opacity 3s, transform 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <br>Nulla eget tellus vel sem gravida facilisis. Quisque eget metus vitae elit venenatis dictum sed nec arcu. Fusce a massa vel ligula vehicula elementum.
+    </div>
+
+    <script>
+        const textElement = document.querySelector('.text');
+
+        // Funkcja do animacji pojawiania się tekstu
+        function fadeInText() {
+            textElement.style.opacity = '1';
+            textElement.style.transform = 'translateY(0)';
+        }
+
+        // Wywołanie funkcji animacji po załadowaniu strony
+        window.addEventListener('load', fadeInText);
+    </script>
+</body>
+</html>
