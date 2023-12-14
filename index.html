@@ -1,164 +1,151 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="Shortcut icon" href="img/icon.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="Shortcut icon" href="img/icon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Fira+Sans&display=swap" rel="stylesheet">
-
-    <title>knappz_web</title>
-</head>
-<body>
-<section class="back">
-    
-</section>
-<header>
-        <!-- NAWIGACJA -->
-    <div class="navbar">
-            
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jakub Knapik</title>
+  </head>
+  <body>
+    <section class="back"></section>
+    <header>
+      <!-- NAWIGACJA -->
+      <div class="navbar">
         <div class="logo">
-            <a href="#">knappz</a>
+          <a href="#">Jakub Knapik</a>
         </div>
-                    
+
         <ul class="links">
-            <li><a href="#projects">Projekty</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-            <li><a href="#footer">Sociale</a></li>
+          <li><a href="#projects">Projekty</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#footer">Sociale</a></li>
         </ul>
-                    
+
         <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </div>
-    
-    </div>
-                
-            
-        <!-- MENU RESPONSYWNE -->
-    <div class="dropdown_menu">
+      </div>
+
+      <!-- MENU RESPONSYWNE -->
+      <div class="dropdown_menu">
         <li><a href="#">Home</a></li>
         <li><a href="#projects">Projekty</a></li>
         <li><a href="#contact">Kontakt</a></li>
         <li><a href="#footer">Sociale</a></li>
-    </div>
-                
-</header>
+      </div>
+    </header>
 
-<!-- MAIN KONTENT -->
-<main>
-    
-    <section id="home">
+    <!-- MAIN KONTENT -->
+    <main>
+      <section id="home">
         <div class="container">
-
-            <div class="card">
-                <img src="img/planet3.png">
-            </div>                  
-
-            <div class="opis">
-                <p> There are many variations of passages of Lorem Ipsum available, <br>
-                    but the majority have suffered alteration in some form, by injected humour, <br>
-                    or randomised words which don't look even slightly believable. <br>
-                </p>
-                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure <br>
-                    there isn't anything embarrassing hidden in the middle of text. <br>
-                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, <br>
-                </p>
-            </div>
+          
+          <h1 class="hello">Witaj</h1>
+          
         </div>
+      </section>
 
-    </section>
-    
-    
+      <section id="projects">
+        <a href="https://github.com/knaappz/planer_flutter.git" target="_blank" title="Flutter App GitHub" class="p1 topp">
+          <div class="box img-fl"></div>
+          <p>
+            Aplikacja Planner w Flutter to nowoczesne narzędzie organizacyjne,
+            które umożliwia użytkownikom planowanie ich codziennych działań.
+            Dzięki intuicyjnemu interfejsowi stworzonemu w technologii Flutter,
+            aplikacja zapewnia płynne i responsywne doświadczenie. Użytkownicy
+            mogą łatwo dodawać, edytować i usuwać zadania, ustalać priorytety, a
+            także korzystać z funkcji powiadomień, aby być zawsze na bieżąco.
+          </p>
+        </a>
 
-    <section id="projects">
-        Projects
-    </section>
+        <a href="https://github.com/knaappz/planer_django.git" target="_blank" title="Django Web GitHub" class="p1">
+          <div class="box img-dj"></div>
+          <p>
+            Planner stworzony w Django to zaawansowane narzędzie do zarządzania
+            harmonogramem i zadaniami. Wykorzystując potężny framework Django,
+            aplikacja oferuje pełną skalowalność i bezpieczeństwo danych.
+            Użytkownicy mogą tworzyć wielopoziomowe zadania, przypisywać je do
+            różnych projektów, a także monitorować postępy.
+          </p>
+        </a>
 
-    <section id="contact">
-        Contact
-    </section>  
+        <a href=" " target="_blank" title="NegrarCafe Web GitHub" class="p1 bottom">
+          <div class="box img-wp"></div>
+          <p>
+            Strona Kawianri stworzona w WordPress to wirtualne miejsce, gdzie
+            pasjonaci kawy mogą znaleźć inspirację, informacje o różnych
+            rodzajach ziaren, oraz ciekawe przepisy na przygotowanie ulubionego
+            napoju. Dzięki responsywnemu i estetycznemu szablonowi WordPress,
+            strona oferuje użytkownikom łatwą nawigację i przyjemne
+            doświadczenie przeglądania.
+          </p>
+        </a>
+      </section>
 
-    <section id="socials">
-                <a class="blok ig" href="https://www.instagram.com/jakubenz311/" target="_blank">
-                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Instagram-512.png">
-                    <p>jakubenz311</p>
-                </a>
+      <section id="contact">Contact</section>
 
-                <a class="blok gh" href="https://github.com/knaappz" target="_blank">
-                    <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png">
-                    <p>knaappz</p>
-                </a>
+      <section id="socials">
+        <a
+          class="blok ig"
+          href="https://www.instagram.com/jakubenz311/"
+          target="_blank"
+        >
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Instagram-512.png"
+          />
+          <p>jakubenz311</p>
+        </a>
 
-                <a class="blok dc" href="https://discord.com/" target="_blank">
-                    <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png">
-                    <p>knappz</p>
-                </a>
-    </section>
+        <a class="blok gh" href="https://github.com/knaappz" target="_blank">
+          <img
+            src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"
+          />
+          <p>knaappz</p>
+        </a>
 
-    <div id="footer">
-            <p>© knappz_web. Wszystkie prawa zastrzeżone</p>
-    </div>
-</main>
+        <a class="blok dc" href="https://discord.com/" target="_blank">
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png"
+          />
+          <p>knappz</p>
+        </a>
+      </section>
 
+      <div id="footer">
+        <p>© knappz_web. Wszystkie prawa zastrzeżone</p>
+      </div>
+    </main>
 
-<!-- SKRYPTY -->
-<!-- 1# MENU SKRYPT -->
-<script>
-    const toggle_btn = document.querySelector('.toggle_btn')
-    const toggle_btnIcon = document.querySelector('.toggle_btn i')
-    const dropdown_menu = document.querySelector('.dropdown_menu')
+    <!-- SKRYPTY -->
+    <!-- 1# MENU SKRYPT -->
+    <script>
+      const toggle_btn = document.querySelector(".toggle_btn");
+      const toggle_btnIcon = document.querySelector(".toggle_btn i");
+      const dropdown_menu = document.querySelector(".dropdown_menu");
 
-    toggle_btn.onclick = function () {
-        dropdown_menu.classList.toggle('open')
-        const isOpen = dropdown_menu.classList.contains('open')
+      toggle_btn.onclick = function () {
+        dropdown_menu.classList.toggle("open");
+        const isOpen = dropdown_menu.classList.contains("open");
 
         toggle_btnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-    }
-</script>
-
-<!-- ANIMOWANY KSIEZYC -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-<script>
-    // Tablica z nazwami obrazków
-    const imageNames = [
-        'sierp2.png',
-        'p_kwadra.png',
-        'r_garb2.png',
-        'pelnia.png',
-        'r_garb.png',
-        'p_kwadra2.png',
-        'sierp.png',
-        'now.png'
-    ];
-
-    // Pobierz element obrazu
-    const moonImage = document.getElementById('moonImage');
-
-    // Indeks aktualnie wyświetlanego obrazu
-    let currentIndex = 0;
-
-    // Funkcja do zmiany obrazu co pół godziny
-    function changeImage() {
-        // Zaktualizuj źródło obrazu
-        moonImage.src = `img/${imageNames[currentIndex]}`;
-        
-        // Przejdź do następnego obrazu lub wróć na początek
-        currentIndex = (currentIndex + 1) % imageNames.length;
-    }
-
-    // Uruchom funkcję zmiany obrazu co pół godziny (1800 000 ms)
-    setInterval(changeImage, 9000);
-</script>
-
-</body>
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
 </html>
