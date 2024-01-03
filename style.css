@@ -2,6 +2,7 @@
     --color-brd-blue: #1d1d1d;
     --color-header: rgb(28, 35, 77);
     --color-dViolet: #21214b4f;
+    --color-tile: #ffb36264;
 }
 
 * {
@@ -178,21 +179,54 @@ main {
 .container {
     position: absolute;
     display: flex;
-    justify-content: center;
     max-width: 100%;
-    width: 50%;
-    background-color: #0a182852;
+    width: 90%;
+    border-radius: 50px;
+    justify-content: space-around
 }
 
-.container img {
-    margin: 10px;
+.leftside,
+.rightside {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+    border-radius: 50px;
 }
 
-.hello {
-    width: 100%;
-    height: 50px;
-    background-color: #0a182852;
 
+
+.leftside {
+    background-image: linear-gradient(to top, #3d4e84, #202d5e);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.leftside h1 {
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    background-image: url(img/profilowe.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.opis {
+    background-color: var(--color-dViolet);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.opis p {
+    margin-bottom: 10px;
 }
 
 .start {
@@ -202,7 +236,8 @@ main {
 }
 
 .btn-start {
-    width: 90px;
+    margin-top: 20px;
+    width: 100px;
     text-align: center;
     background-color: orange;
     padding: 5px;
@@ -218,7 +253,6 @@ main {
     font-size: 1rem;
 }
 
-
 .btn-start:hover {
     scale: 1.05;
 }
@@ -227,11 +261,8 @@ main {
     scale: 0.95;
 }
 
-
-/* KARTA */
-
 #projects,
-#contact {
+#experience {
     height: 100vh;
     width: 90%;
     margin: 20px auto;
@@ -245,6 +276,7 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    justify-content: center
 }
 
 .p1 {
@@ -290,7 +322,7 @@ main {
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
 
     100% {
@@ -320,13 +352,86 @@ main {
     background-image: url(https://nedbatchelder.com/pix/django-icon-256.png);
 }
 
-#contact {
+/* Experience */
+
+#experience {
+    height: 100vh;
     display: flex;
     color: #fff;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#socials {
+.tile {
+    display: flex;
+    width: 80%;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: #1d1d1d;
+    box-shadow: 0px 0px 200px rgba(255, 166, 0, 0.302);
+}
+
+.tile-one {
+    width: 50%;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-tile);
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tile-one:hover {
+    scale: 0.92;
+    border-radius: 20px;
+}
+
+
+.tile-one h3 {
+    color: orange;
+}
+
+.first {
+    border-top-left-radius: 20px;
+}
+
+.third {
+    border-bottom-right-radius: 20px;
+
+}
+
+.tile p {
+    font-size: 0.8rem;
+}
+
+.tile img {
+    height: 100%;
+
+}
+
+.third-img {
+    background-image: url(https://www.dsw.edu.pl/sites/dsw/files/media/image/DSW%20202002%203628.jpg);
+    width: 50%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.secound-img {
+    background-image: url(https://d-art.ppstatic.pl/kadry/k/r/1/d5/15/52ee9e414b4f7_o_full.jpg);
+    width: 50%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+#contact {
     height: 100vh;
     width: 90%;
     color: #fff;
@@ -408,9 +513,25 @@ main {
     .dropdown_menu {
         display: block;
     }
+
+    .tile {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .tile p {
+        font-size: 0.7rem;
+    }
+
+    .tile h3 {
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 732px) {
+
     .blok {
         margin: 0;
         padding: 0;
@@ -431,6 +552,21 @@ main {
 }
 
 @media (max-width: 663px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .rightside {
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+    .leftside {
+        width: unset;
+
+    }
+
     .p1 {
         display: flex;
         flex-direction: row;
@@ -466,7 +602,7 @@ main {
 
 @media (max-width: 451px) {
     .p1 p {
-        font-size: 0.5rem;
+        font-size: 0.57rem;
     }
 
     .box {
