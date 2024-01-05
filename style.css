@@ -17,6 +17,10 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    color: #fff;
+}
+
 body {
     width: 100%;
     background-color: #0a1828;
@@ -188,7 +192,7 @@ main {
 .leftside,
 .rightside {
     width: 400px;
-    height: 600px;
+    height: 510px;
     margin: 5px;
     border-radius: 50px;
 }
@@ -216,6 +220,8 @@ main {
     height: 150px;
     border-radius: 50px;
     margin-bottom: 30px;
+    margin-top: 30px;
+
 }
 
 .opis {
@@ -253,6 +259,11 @@ main {
     font-size: 1rem;
 }
 
+.btn-start a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .btn-start:hover {
     scale: 1.05;
 }
@@ -280,6 +291,7 @@ main {
 }
 
 .p1 {
+    position: relative;
     margin: 20px 0px 20px 0px;
     width: 80%;
     height: 200px;
@@ -294,10 +306,14 @@ main {
     transition: 0.4s;
     border-right: 7px solid var(--color-brd-blue);
     border-bottom: 7px solid var(--color-brd-blue);
+    overflow: hidden;
+
 }
 
 .p1.topp {
     background-color: rgb(0, 61, 147);
+    overflow: hidden;
+
 }
 
 .p1.bottom {
@@ -311,9 +327,38 @@ main {
 
 }
 
+.cursor-on:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
 .p1 p {
     font-size: 0.8rem;
     width: 60%;
+}
+
+.cursor-on {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    background-color: #202d5e50;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cursor-on h1 {
+    background-color: #19192d;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    opacity: 1;
 }
 
 @keyframes liftAndDrop {
@@ -331,6 +376,7 @@ main {
 }
 
 .box {
+    position: relative;
     width: 100px;
     height: 100px;
     background-image: url(https://yt3.googleusercontent.com/ytc/APkrFKaD8t4oFlgXcZKoW512Z81CBJuej3K9uHAlSI0x=s900-c-k-c0x00ffffff-no-rj);
@@ -394,7 +440,7 @@ main {
 
 
 .tile-one h3 {
-    color: orange;
+    color: #fff;
 }
 
 .first {
@@ -421,6 +467,7 @@ main {
     height: 200px;
     background-position: center;
     background-size: cover;
+    border-bottom-right-radius: 20px;
 }
 
 .secound-img {

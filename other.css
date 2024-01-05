@@ -1,0 +1,94 @@
+:root {
+    --color-brd-blue: #1d1d1d;
+    --color-header: rgb(28, 35, 77);
+    --color-dViolet: #2a2a67a8;
+    --color-tile: #ffb36264;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+body {
+    width: 100%;
+    background-color: #0a1828;
+
+    user-select: none;
+    -moz-user-select: none;
+    /* Dla przeglądarek opartych na silniku Gecko (Firefox) */
+    -webkit-user-select: none;
+    /* Dla przeglądarek opartych na silniku WebKit (Chrome, Safari) */
+    -ms-user-select: none;
+}
+
+#content {
+    width: 90%;
+    height: 100vh;
+    margin: 0px auto;
+    padding-top: 30px;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.flutterapp {
+    width: 100%;
+    height: 750px;
+
+}
+
+.navbar {
+    padding: 10px;
+    max-width: 700px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 30%;
+    background-color: var(--color-header);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 7px solid var(--color-brd-blue);
+    border-bottom: 7px solid var(--color-brd-blue);
+
+}
+
+.navbar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.blok {
+    width: 20%;
+    transition: 0.4s;
+    margin: 10px;
+}
+
+.blok:hover {
+    scale: 1.1;
+}
+
+.icons {
+    display: flex;
+
+}
