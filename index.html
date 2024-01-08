@@ -43,10 +43,10 @@
 
       <!-- MENU RESPONSYWNE -->
       <div class="dropdown_menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Strona główna</a></li>
         <li><a href="#projects">Projekty</a></li>
         <li><a href="#experience">Doświadczenie</a></li>
-        <li><a href="#footer">Sociale</a></li>
+        <li><a href="#footer">Kontakt</a></li>
       </div>
     </header>
 
@@ -93,7 +93,7 @@
           </p>
         </a>
 
-        <a href="djangoapp.html" target="_blank" title="Django Web" class="p1">
+        <a href="djangoapp.html" title="Django Web" class="p1">
           <div class="cursor-on">
             <h1>Sprawdź -></h1>
           </div>
@@ -103,7 +103,7 @@
           </p>
         </a>
 
-        <a href=" " target="_blank" title="NegrarCafe Web" class="p1 bottom">
+        <a href=" " title="NegrarCafe Web" class="p1 bottom">
           <div class="cursor-on">
             <h1>Sprawdź -></h1>
           </div>
@@ -116,48 +116,64 @@
 
       <section id="experience">
 
-        <h1>- - Moje doświadczenie - - </h1>
-        <div class="tile first">
-
-          <div class="tile-one first">
-            <h3>Zespół Szkół Zawodowych w Brzegu Dolnym</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation. 
-            </p>
-          </div>
-         <div class="secound-img"></div>
-
-        </div>
-
-        <div class="tile secound">
-          <div class="third-img"></div>
-
-          <div class="tile-one">
-            <h3>Nazwa kafelka</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
-            </p>
-          </div>
-        </div>
-
-        <div class="tile third">
+        <div class="leftcolumn">
+          <h1>Doświadczenie:</h1>
+          <section>
+            <img src="img/pcc.png" alt="pcc">
           
-          <div class="tile-one">
-            <h3>Uniwersytet Dolnośląski DSW we Wrocławiu</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              </p>
-          </div>
-         <div class="third-img"></div>
+          <ul class="staz">
+            Staż wakacyjny w PCC IT <br>
+            Termin:  01.08 - 31.08.2021
+            <br>
+            <br>
+            Obowiązki:
+            <br>
+            <br>
+              
+            <li>wymiana monitorów</li>
+            <li>wymiana zużytego sprzętu komputerowego</li>
+            <li>serwis telefonów służbowych</li>
+            <li>prowadzenie dokumentacji serwisowanych telefonów</li>
 
+          </ul>
+          
+          </section>
+          <hr>
+          <section>
+            <img src="img/soon.jpg" alt="soon">
+            <p>Inne staże/praktyki w realizacji...</p>
+          </section>
         </div>
         
         
+        <div class="rightcolumn">
+          <h1>Wykształcenie:</h1>
 
+          <section>
+          <img src="img/zetka.png" alt="zetka">
+          <p>
+            Uczęszczałem do <br> 
+            Zespołu Szkół Zawodowych w Brzegu Dolnym na kierunku Technik Informatyk.
+          </p>
+          </section>
+          
+          <hr>
+
+          <section>
+            <img src="img/dsw.png" alt="dsw">
+            <p>
+              Aktualnie studiuje stacjonarnie na Uniwersytecie Dolnośląskim DSW we 
+              Wrocławiu. Na kierunku informatyki.<br> 
+            </p>
+          </section>
+
+        </div>
+        
       </section>
 
       <section id="contact">
-        <a
+        <div class="icons">
+          <a
           class="blok ig"
           href="https://www.instagram.com/jakubenz311/"
           target="_blank"
@@ -165,22 +181,33 @@
           <img
             src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Instagram-512.png"
           />
-          <p>jakubenz311</p>
         </a>
 
         <a class="blok gh" href="https://github.com/knaappz" target="_blank">
           <img
             src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"
           />
-          <p>knaappz</p>
         </a>
 
         <a class="blok dc" href="https://discord.com/" target="_blank">
           <img
             src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png"
           />
-          <p>knappz</p>
         </a>
+        </div>
+       
+        <div class="form-contact">
+          <form method="post" action="" id="contact_form">
+            <h2>Formularz kontaktowy</h2>             
+              <label for="email">Adres email</label>
+              <input type="text" name="email" id="email" class="formField" />
+              <label for="message">Treść wiadomości</label>
+              <textarea name="message" id="message" class="formField"></textarea>
+              <button id="sendBtn">Wyślij</button>
+          </form>
+        </div>
+        
+        
       </section>
 
       <div id="footer">
