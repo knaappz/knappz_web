@@ -290,10 +290,10 @@ main {
 #projects {
     display: flex;
     color: #fff;
-    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .p1 {
@@ -432,7 +432,7 @@ main {
     border-radius: 20px;
     margin-top: 20px;
     width: 49%;
-    height: 50%;
+    height: 60%;
     padding: 1.2rem;
     background-image: var(--color-column);
     display: flex;
@@ -455,7 +455,7 @@ main {
 }
 
 #contact {
-    height: 100vh;
+    
     width: 60%;
     color: #fff;
     margin: 20px auto 0 auto;
